@@ -1,0 +1,35 @@
+   <!DOCTYPE html>
+<head>
+    <title>Multimedia Example</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Welcome to My Multimedia Page</h1>
+
+    <!-- Image -->
+    <h2>Image Example</h2>
+    <img id="myImage" src="image.png" width="300px" height="200px">
+
+    <!-- Audio -->
+    <h2>Audio Example</h2>
+    <audio id="myAudio" controls>
+        <source src="audio.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+    <br>
+    <button onclick="playAudio()">Play Audio</button>
+    <button onclick="pauseAudio()">Pause Audio</button>
+
+    <!-- Video -->
+    <h2>Video Example</h2>
+    <video id="myVideo" width="400" controls>
+        <source src="video.mp4" type="video/mp4">
+        Your browser does not support the video element.
+    </video>
+    <br>
+    <button onclick="playVideo()">Play Video</button>
+    <button onclick="pauseVideo()">Pause Video</button>
+
+    <script src="script.js"></script>
+</body>
+</html>
